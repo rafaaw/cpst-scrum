@@ -4,21 +4,22 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
-import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.io.Serializable;
+import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@TypeAlias("User")
-@Document("cad_user")
+@TypeAlias("Stage")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class User {
+public class Stage extends Audit implements Serializable {
 
-    @Id
+    private static final long serialVersionUID = -3908099928352863008L;
     private String id;
-    private String username;
-    private String password;
+    private String name;
+    private LocalDate startJob;
+    private LocalDate endJob;
 
 }
