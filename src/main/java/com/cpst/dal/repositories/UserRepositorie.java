@@ -1,6 +1,6 @@
 package com.cpst.dal.repositories;
 
-import com.cpst.models.User;
+import com.cpst.dto.models.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

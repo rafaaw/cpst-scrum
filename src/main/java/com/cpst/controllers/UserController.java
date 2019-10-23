@@ -1,6 +1,6 @@
 package com.cpst.controllers;
 
-import com.cpst.models.User;
+import com.cpst.dto.models.User;
 import com.cpst.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

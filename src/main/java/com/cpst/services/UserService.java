@@ -1,7 +1,7 @@
 package com.cpst.services;
 
 import com.cpst.dal.repositories.UserRepositorie;
-import com.cpst.models.User;
+import com.cpst.dto.models.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
