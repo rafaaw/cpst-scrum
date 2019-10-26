@@ -21,7 +21,7 @@ import java.util.List;
 @TypeAlias("Sprint")
 @Document("mov_sprints")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Sprint extends Audit {
+public class Sprint implements Serializable {
 
     @Id
     private String id;

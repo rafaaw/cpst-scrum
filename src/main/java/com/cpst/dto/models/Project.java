@@ -20,7 +20,7 @@ import java.util.List;
 @TypeAlias("Project")
 @Document("cad_project")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Project extends Audit {
+public class Project implements Serializable {
 
     private static final long serialVersionUID = 1762132305556833871L;
     @Id

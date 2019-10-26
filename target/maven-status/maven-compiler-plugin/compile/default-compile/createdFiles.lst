@@ -1,9 +1,11 @@
 com\cpst\dal\repositories\SprintRepository.class
+com\cpst\docs\SwaggerConfig.class
 com\cpst\services\UserService.class
 com\cpst\dal\repositories\UserRepositorie.class
 com\cpst\dto\models\Audit.class
 com\cpst\interfaces\MongoDinamicQuery.class
 com\cpst\controllers\SprintController.class
+com\cpst\dto\models\Sprint$SprintBuilder.class
 com\cpst\dal\repositories\ProjectRepository.class
 com\cpst\dto\models\Project.class
 com\cpst\dto\enumerates\STATUS.class
@@ -15,10 +17,14 @@ com\cpst\interfaces\CpstService.class
 com\cpst\CooperstandardScrumApplication.class
 com\cpst\controllers\ProjectController.class
 com\cpst\dal\querys\ProjectQuery.class
+com\cpst\dto\models\Stage$StageBuilder.class
 com\cpst\dto\models\Stage.class
+com\cpst\dto\models\Project$ProjectBuilder.class
 com\cpst\dal\resolvers\UserResolver.class
+com\cpst\dal\querys\ProjectQuery$ProjectQueryBuilder.class
 com\cpst\dto\models\Sprint.class
 com\cpst\interfaces\MongoDinamicQueryBuildImpl.class
+com\cpst\security\config\SecurityConfig.class
 com\cpst\controllers\UserController.class
 com\cpst\dal\resolvers\ProjectResolver.class
 com\cpst\dal\resolvers\SprintResolver.class

@@ -1,6 +1,5 @@
 package com.cpst.services;
 
-import br.com.devengine.Errors;
 import com.cpst.dal.querys.SprintQuery;
 import com.cpst.dal.repositories.SprintRepository;
 import com.cpst.dto.models.Sprint;
@@ -28,19 +27,22 @@ public class SprintService implements CpstService<Sprint, SprintQuery> {
 
     @Override
     public ResponseEntity<Sprint> createOrUpdate(Sprint object) {
-        return Errors.tryCatchDefault(f -> {
-                    object.setProject_id(projectService.findById(object.getProject_id().getId()));
-                    return new ResponseEntity(sprintRepository.save(object), HttpStatus.CREATED);
-                },
-                new ResponseEntity(HttpStatus.NOT_MODIFIED));
+        try {
+            object.setProject_id(projectService.findById(object.getProject_id().getId()));
+            return new ResponseEntity(sprintRepository.save(object), HttpStatus.CREATED);
+        } catch (Exception ex) {
+        }
+        return new ResponseEntity(HttpStatus.NOT_MODIFIED);
     }
 
     @Override
     public ResponseEntity delete(Sprint object) {
-        return Errors.tryCatchDefault(f -> {
+        try {
             sprintRepository.delete(object);
             return new ResponseEntity(HttpStatus.ACCEPTED);
-        }, new ResponseEntity(HttpStatus.NOT_ACCEPTABLE));
+        } catch (Exception ex) {
+        }
+        return new ResponseEntity(HttpStatus.NOT_ACCEPTABLE);
     }
 
     @Override

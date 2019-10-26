@@ -1,2 +1,30 @@
 server:
   port: 8081
+  servlet:
+    context-path: /cpst
+
+spring:
+  application:
+    name: cpst-scrum
+  jpa:
+    open-in-view: false
+  jmx:
+    enabled: false
+
+security:
+  oauth2:
+    client:
+      client-id: admin
+      client-secret: Cpst@123
+      scope:
+        - password
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

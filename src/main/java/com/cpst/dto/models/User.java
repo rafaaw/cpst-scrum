@@ -8,13 +8,15 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @TypeAlias("User")
 @Document("cad_user")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class User extends Audit {
+public class User implements Serializable {
 
     @Id
     private String id;

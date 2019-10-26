@@ -56,9 +56,9 @@ public class ProjectService implements CpstService<Project, ProjectQuery> {
         System.out.println(projectQuery.toString());
         Optional<List<Project>> list = queryBuild.query(projectQuery, Project.class);
         if (list.isPresent()) {
-            return new ResponseEntity(list.get(), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(list.get(), HttpStatus.FOUND);
         }
-        return new ResponseEntity(Collections.emptyList(), HttpStatus.FOUND);
+        return new ResponseEntity(Collections.emptyList(), HttpStatus.NOT_FOUND);
     }
 
 }

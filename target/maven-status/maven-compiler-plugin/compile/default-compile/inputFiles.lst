@@ -8,6 +8,7 @@ C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\dto\enumer
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\dal\config\MongoDbConfiguration.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\interfaces\MongoDinamicQuery.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\controllers\ProjectController.java
+C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\security\config\SecurityConfig.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\CooperstandardScrumApplication.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\dto\models\Project.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\services\UserService.java
@@ -21,6 +22,7 @@ C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\services\S
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\interfaces\CpstController.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\controllers\UserController.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\controllers\SprintController.java
+C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\docs\SwaggerConfig.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\dal\querys\ProjectQuery.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\dto\models\Audit.java
 C:\Users\Rafael Chaves\IdeaProjects\cpst-scrum\src\main\java\com\cpst\services\ProjectService.java

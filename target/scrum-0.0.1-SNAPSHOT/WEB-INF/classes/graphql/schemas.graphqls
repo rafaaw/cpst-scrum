@@ -1,0 +1,7 @@
+type Query {
+    users: [User]
+    user(username: String) : User
+    projects(pesquisa: ProjectQuery!): [Project]
+    sprints(pesquisa: SprintQuery!): [Sprint]
+}
+
