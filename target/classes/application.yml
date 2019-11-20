@@ -8,8 +8,6 @@ spring:
     name: cpst-scrum
   jpa:
     open-in-view: false
-  jmx:
-    enabled: false
 
 security:
   oauth2:
@@ -18,13 +16,3 @@ security:
       client-secret: Cpst@123
       scope:
         - password
-
-eureka:
-  instance:
-    prefer-ip-address: true
-    hostname: localhost
-  client:
-    fetch-registry: false
-    register-with-eureka: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

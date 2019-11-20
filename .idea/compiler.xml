@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cpst-scrum" target="8" />
+      <module name="cpst-scrum" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

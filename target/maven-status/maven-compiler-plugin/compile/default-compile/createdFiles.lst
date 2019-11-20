@@ -2,7 +2,6 @@ com\cpst\dal\repositories\SprintRepository.class
 com\cpst\docs\SwaggerConfig.class
 com\cpst\services\UserService.class
 com\cpst\dal\repositories\UserRepositorie.class
-com\cpst\dto\models\Audit.class
 com\cpst\interfaces\MongoDinamicQuery.class
 com\cpst\controllers\SprintController.class
 com\cpst\dto\models\Sprint$SprintBuilder.class
