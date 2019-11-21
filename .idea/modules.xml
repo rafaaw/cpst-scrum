@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cpst-scrum.iml" filepath="$PROJECT_DIR$/cpst-scrum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cpst-scrum/cpst-scrum.iml" filepath="$PROJECT_DIR$/cpst-scrum/cpst-scrum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-api.iml" filepath="$PROJECT_DIR$/rest-api.iml" />
     </modules>
   </component>
 </project>

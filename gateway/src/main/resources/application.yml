@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /gateway
+
+spring:
+  application:
+    name: gateway
+
+zuul:
+  sensitive-headers:
+    - Cookies
+  routes:
+    cpst-scrum:
+      path: /scrum/**
+      url: http://localhost:8082/cpst-scrum
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8081/eureka/

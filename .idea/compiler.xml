@@ -7,15 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cpst-scrum" />
+        <module name="gateway" />
+        <module name="discovery" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cpst-scrum" target="1.8" />
+      <module name="cpst-scrum" target="8" />
+      <module name="discovery" target="8" />
+      <module name="gateway" target="8" />
+      <module name="rest-api" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cpst-scrum" options="-parameters" />
+      <module name="discovery" options="-parameters" />
+      <module name="gateway" options="-parameters" />
     </option>
   </component>
 </project>
