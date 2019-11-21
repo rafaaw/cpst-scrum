@@ -1,9 +1,9 @@
 package com.cooperstandard.scrum.dal.resolvers;
 
 import com.cooperstandard.scrum.dal.querys.ProjectQuery;
+import com.cooperstandard.scrum.dto.models.Project;
 import com.cooperstandard.scrum.services.ProjectService;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import com.cpst.dto.models.Project;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
